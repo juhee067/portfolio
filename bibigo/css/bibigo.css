@@ -1,0 +1,46 @@
+* {
+  outline: 1px solid #f00;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* header */
+header {
+  line-height: 80px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+header .icon i {
+  padding-left: 20px;
+}
+/* mainVisual */
+
+.mainVisual {
+  padding: 50px 0;
+}
+
+.mainVisual .topic h2 {
+  font-size: 79px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 30px 0;
+}
+.mainVisual span {
+  display: block;
+}
+
+.mainVisual .topic p {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #292929;
+}
