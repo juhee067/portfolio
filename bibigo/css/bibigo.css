@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid #f00;
-}
+} */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -9,6 +9,7 @@
 /* header */
 header {
   line-height: 80px;
+  border-bottom: 1px solid #ddd;
 }
 header .container {
   display: flex;
@@ -25,7 +26,10 @@ header .icon i {
 /* mainVisual */
 
 .mainVisual {
-  padding: 50px 0;
+  position: relative;
+}
+.mainVisual .container {
+  padding: 60px 0 160px 0;
 }
 
 .mainVisual .topic h2 {
@@ -43,4 +47,81 @@ header .icon i {
   font-weight: 300;
   line-height: 1.5em;
   color: #292929;
+  margin-bottom: -50px;
+}
+
+.mainVisual .bibigo-logo {
+  position: absolute;
+  right: 30%;
+  z-index: 4;
+  transform: translateY(500px);
+  opacity: 0;
+  -webkit-animation: topmove 2s both;
+  animation: topmove 2s both;
+}
+
+@-webkit-keyframes topmove {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 2s;
+  }
+}
+
+@keyframes topmove {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 2s;
+  }
+}
+
+.mainVisual .source {
+  position: absolute;
+  width: 30%;
+  transform: rotate(-15deg);
+  z-index: 3;
+}
+.mainVisual .bibigoImg {
+  width: 80%;
+  transform: rotate(-20deg);
+  margin-left: 250px;
+}
+
+/* mainGive */
+.mainGive {
+  padding: 100px 0;
+  background: url(../img/main_give.jpg) no-repeat center center/cover;
+}
+
+.mainGive .giveGoal {
+  padding-top: 370px;
+  text-align: right;
+  margin: 0 0 0 auto;
+}
+
+.mainGive .giveGoal h2 {
+  font-size: 41px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 30px 0;
+  text-shadow: 1px 1px 0px #000;
+}
+
+.mainGive .giveGoal p {
+  font-size: 19px;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 1px 0px 0px #000;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+.mainGive .giveGoal p:nth-of-type(1) {
+  margin: 0 0 20px 0;
+}
+.mainGive .giveGoal span {
+  font-size: 15px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
