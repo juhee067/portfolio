@@ -256,3 +256,34 @@ header .icon i {
 .brand-symbol .green-box {
   margin-top: 344px;
 }
+/* video */
+.video {
+  padding: 100px 0;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.video h2 {
+  font-size: 31px;
+  font-weight: 700;
+}
+
+.video .top span {
+  display: inline-block;
+  padding: 10px 20px 14px 20px;
+  background-color: #72af2c;
+  font-size: 17px;
+  color: #fff;
+}
+.top span i {
+  padding-left: 10px;
+}
+.video .slider img {
+  width: 70%;
+}
+.video .slider .itm02 img {
+  margin-top: 100px;
+}
