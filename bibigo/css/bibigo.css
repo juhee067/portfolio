@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid #f00;
-}
+} */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -282,8 +282,34 @@ header .icon i {
   padding-left: 10px;
 }
 .video .slider img {
+  margin: 0 auto;
   width: 70%;
 }
-.video .slider .itm02 img {
-  margin-top: 100px;
+
+.video .slider figure {
+  position: relative;
+  cursor: pointer;
+}
+.video .slider figure .playBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.video .slider figure .playBtn i {
+  font-size: 80px;
+  color: #72af2c;
+  transform: rotate(90deg);
+}
+.video .slider figure .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 998;
 }
