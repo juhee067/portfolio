@@ -5,3 +5,5 @@ $(".slider").slick({
   arrows: false,
   autoplay: true,
 });
+
+let scrollBox = document.querySelector(".scroll");

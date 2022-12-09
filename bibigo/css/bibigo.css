@@ -87,7 +87,16 @@ header .icon i {
   transform: rotate(-20deg);
   margin-left: 250px;
 }
-
+.mainVisual .scroll {
+  display: inline-block;
+  color: #fff;
+  background-color: #72af2c;
+  padding: 15px 30px 17px 30px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* mainGive */
 .mainGive {
   padding: 100px 0;
@@ -365,6 +374,11 @@ footer p {
 
 footer .right .select {
   margin-bottom: 20px;
+  text-align: right;
+}
+footer .right .select #select {
+  border: 1px solid #ddd;
+  padding: 5px 10px;
 }
 footer .right .sns {
   margin-bottom: 20px;
@@ -381,5 +395,5 @@ footer .right .sns i ~ i {
 }
 footer .right .symbol {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
