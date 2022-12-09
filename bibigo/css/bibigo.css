@@ -288,7 +288,7 @@ header .icon i {
 
 .video .slider figure {
   position: relative;
-  cursor: pointer;
+  cursor: g;
 }
 .video .slider figure .playBtn {
   position: absolute;
@@ -312,4 +312,74 @@ header .icon i {
   background-color: #fff;
   border-radius: 50%;
   z-index: 998;
+}
+
+/* footer */
+footer {
+  padding: 50px 0;
+  border-top: 1px solid #ddd;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .list ul {
+  display: flex;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #313131;
+}
+footer .list > ul li#redFont {
+  color: #f00;
+}
+/* footer .list ul li ~ li {
+  padding: 0 10px;
+} */
+footer .list ul li ~ li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #ddd;
+  margin: 0 15px;
+}
+footer .company ul {
+  display: flex;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: #313131;
+}
+footer .company ul li ~ li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #ddd;
+  margin: 0 10px;
+}
+footer p {
+  font-size: 13px;
+}
+
+footer .right .select {
+  margin-bottom: 20px;
+}
+footer .right .sns {
+  margin-bottom: 20px;
+  text-align: right;
+}
+footer .right .sns i {
+  font-size: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 50%;
+}
+footer .right .sns i ~ i {
+  margin: 0 2px;
+}
+footer .right .symbol {
+  display: flex;
+  gap: 20px;
 }
