@@ -1,6 +1,6 @@
-/* * {
+* {
   outline: 1px solid #f00;
-} */
+}
 .container {
   width: 100%;
   max-width: 1200px;
@@ -15,9 +15,21 @@ header .container {
   display: flex;
   justify-content: space-between;
 }
-nav {
+nav>ul{
   display: flex;
-  gap: 30px;
+  gap: 100px;
+  text-align: center;
+}
+nav>ul li{
+position: relative;
+}
+nav .submenu {
+  position: absolute;
+ background-color: #fff;
+ border: 1px solid #ddd;
+ }
+nav .submenu a{
+  display: inline-block;
 }
 
 header .icon i {
