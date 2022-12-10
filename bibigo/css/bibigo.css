@@ -1,6 +1,7 @@
-* {
+/* * {
   outline: 1px solid #f00;
-}
+} */
+*{box-sizing: border-box;}
 .container {
   width: 100%;
   max-width: 1200px;
@@ -22,11 +23,35 @@ nav>ul{
 }
 nav>ul li{
 position: relative;
+z-index: 2;
+}
+nav>ul>li:hover .submenu{
+ height: 250px;
+
 }
 nav .submenu {
+  overflow: hidden;
+  height: 0px;
   position: absolute;
+top: 100%;
+right: 50%;
+transform: translateX(50%);
  background-color: #fff;
  border: 1px solid #ddd;
+ border-top: 3px solid #72af2c;
+ width:130px;
+ transition: all 0.5s;
+ }
+nav .submenu::before {
+content: "";
+position: absolute;
+transform: translateX(-50%);
+width: 0;
+height: 0;
+border-bottom: 10px solid transparent;
+border-top: 10px solid  #72af2c;
+border-left: 10px solid  transparent;
+border-right: 10px solid transparent;
  }
 nav .submenu a{
   display: inline-block;
