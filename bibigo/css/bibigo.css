@@ -26,11 +26,11 @@ position: relative;
 z-index: 2;
 }
 nav>ul>li:hover .submenu{
- height: 250px;
+ 
 
 }
 nav .submenu {
-  overflow: hidden;
+ 
   height: 0px;
   position: absolute;
 top: 100%;
@@ -38,8 +38,8 @@ right: 50%;
 transform: translateX(50%);
  background-color: #fff;
  border: 1px solid #ddd;
- border-top: 3px solid #72af2c;
- width:130px;
+ border-top: 2px solid #72af2c;
+ width:200px;
  transition: all 0.5s;
  }
 nav .submenu::before {
