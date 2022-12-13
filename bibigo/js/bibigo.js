@@ -6,4 +6,11 @@ $(".slider").slick({
   autoplay: true,
 });
 
-let scrollBox = document.querySelector(".scroll");
+window.onload = function () {
+  let search = document.getElementById("#search");
+  let searchBar = document.getElementsByClassName("searchBar")[0];
+  search.addEventListener("click", function () {
+    console.log("aa");
+    // searchBar.style.display = "block";
+  });
+};

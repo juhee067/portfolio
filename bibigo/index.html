@@ -11,6 +11,7 @@
  <link rel="stylesheet" href="./assets/css/fontawesome/css/all.css">
  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./css/bibigo.css" />
+    <script src="./js/bibigo.js"></script>
     
   </head>
   <body>
@@ -67,7 +68,7 @@
               <li><a href="">마이페이지</a> </li>
               </ul>
               </li>
-               <li><i class="xi-search"></i></li>
+               <li id="search"><i class="xi-search"></i></li>
               
                
              
@@ -76,12 +77,26 @@
           </i>
        
         </div>
+       
+      </div>
+
+    </header> 
+      <div class="searchBar">
         <div class="search">
-          <input type="search" placeholder="검색어를 입력해주세요">
-          <i class="xi-close"></i>
+          <div class="container"> 
+        <form action="" method="get">
+          <input id='searchBlank'type="search" placeholder="검색어를 입력해주세요">
+          <input type="button" id="searchIcon">
+        </form>
+             
+          <i class="xi-close"></i></div>
+       
+        </div>
+        <div class="searchBg">
+
         </div>
       </div>
-    </header>
+   
     <!-- main -->
     <main>
       <section class="mainVisual">
@@ -309,6 +324,6 @@
           <script src="../assets/js/jquery-1.12.4.min.js"></script>
     <script src="../assets/js/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/bibigo.js"></script>
+   
   </body>
 </html>
