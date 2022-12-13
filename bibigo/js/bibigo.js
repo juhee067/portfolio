@@ -8,6 +8,9 @@ window.onload = function () {
   close.addEventListener("click", function () {
     searchBar.style.display = "none";
   });
+  scrollItem.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 };
 AOS.init();
 
@@ -18,9 +21,9 @@ $(".slider").slick({
 });
 
 // scroll
+let scrollItem = document.querySelector(".scrollUp");
 window.addEventListener("scroll", function () {
-  let scrollItem = document.querySelector(".scrollUp");
-  if (window.scrollY >= 450) {
+  if (window.scrollY >= 200) {
     scrollItem.classList.add("on");
     scrollItem.innerHTML = '<i class="xi-arrow-up"></i>';
   } else {

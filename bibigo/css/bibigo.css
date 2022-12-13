@@ -212,10 +212,11 @@ cursor: pointer;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.5s;
+  cursor: pointer;
 }
  
   .scrollUp.on{
-    /* display: none; */
+
     padding: 0;
     position: fixed;
 
