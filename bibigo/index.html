@@ -11,7 +11,7 @@
  <link rel="stylesheet" href="./assets/css/fontawesome/css/all.css">
  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./css/bibigo.css" />
-    <script src="./js/bibigo.js"></script>
+    
     
   </head>
   <body>
@@ -62,13 +62,13 @@
         <div class="icon">
         
             <ul>
-               <li><i class="xi-user-o"></i>
+               <li class="my"><i class="xi-user-o"></i>
               <ul class="submenu">
                  <li><a href="">로그인</a> </li>
               <li><a href="">마이페이지</a> </li>
               </ul>
               </li>
-               <li id="search"><i class="xi-search"></i></li>
+               <li id="SCBtn"><i class="xi-search"></i></li>
               
                
              
@@ -81,7 +81,8 @@
       </div>
 
     </header> 
-      <div class="searchBar">
+    
+      <div id="searchBar">
         <div class="search">
           <div class="container"> 
         <form action="" method="get">
@@ -89,7 +90,7 @@
           <input type="button" id="searchIcon">
         </form>
              
-          <i class="xi-close"></i></div>
+          <i id='close' class="xi-close"></i></div>
        
         </div>
         <div class="searchBg">
@@ -122,11 +123,11 @@
             <img src="./img/main_visual_c_mandu.png" alt="" />
           </div>
         </div>
-        <div class="scroll">
-          SCROLL DOWN
+        <div class="scrollUp">
+         SCROLL DOWN
           <i class="xi-angle-down-min"></i>
         </div>
-         
+   
         </div>
       </section>
       <section class="mainGive">
@@ -324,6 +325,6 @@
           <script src="../assets/js/jquery-1.12.4.min.js"></script>
     <script src="../assets/js/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   
+    <script src="./js/bibigo.js"></script>
   </body>
 </html>
